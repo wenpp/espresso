@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/login_background">
+    <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="2dp">
+                    <ImageView
+                            android:id="@+id/cancelLoginBtn"
+                            android:background="@drawable/login_cancel"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="32dp"
+                            android:layout_marginRight="24dp"
+
+                    />
+                    <ImageView
+                            android:layout_below="@id/cancelLoginBtn"
+                            android:id="@+id/logoView"
+                            android:layout_marginTop="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:background="@drawable/login_logo"
+                            android:layout_centerHorizontal="true"
+                    />
+                    <RelativeLayout
+                            android:layout_below="@id/logoView"
+                            android:layout_marginTop="70dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true">
+
+
+
+                        <ImageButton
+                                android:id="@+id/ncsBtn"
+                                android:background="@drawable/ncs_unclick"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_centerHorizontal="true"
+                                android:onClick="ncsBtnClick"
+
+                                />
+
+                        <ImageButton
+                                android:id="@+id/singtelBtn"
+                                android:layout_toLeftOf="@id/ncsBtn"
+                                android:background="@drawable/singtel_click"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:onClick="singtelBtnClick"
+
+                                />
+
+                        <ImageButton
+                                android:id="@+id/optusBtn"
+                                android:layout_toRightOf="@id/ncsBtn"
+                                android:background="@drawable/optus_unclick"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:onClick="optusBtnClick"
+                        />
+                    </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@color/login_text_background"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                            android:id="@+id/domainTextView"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:text="@string/Login_DomainText"
+                            android:textSize="13.5sp"
+                            android:textColor="#9d8bb9"
+                            />
+
+                    <EditText
+                            android:id="@+id/domainTextID"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+
+                            />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    >
+                    <View
+                         android:layout_height="1dp"
+                         android:layout_width="match_parent"
+                         android:background="#c5c5c5"
+                            >
+
+                    </View>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                <TextView
+                            android:id="@+id/passwordTextView"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:text="@string/Login_PasswordText"
+                            android:textSize="13.5sp"
+                            android:textColor="#9d8bb9"
+                            />
+
+                <EditText
+                            android:id="@+id/passwrodTextID"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                           />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="0dp">
+
+            <Button
+                    android:id="@+id/loginBtn"
+                    android:text="@string/Login_EnterBtn"
+                    android:textSize="28sp"
+                    android:textColor="#fcfcfc"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/login_enter_button_states"
+                    android:onClick="handleLogin"
+                    />
+    </RelativeLayout>
+</LinearLayout>

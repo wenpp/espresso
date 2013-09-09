@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">espresso</string>
+    <string name="Login_name">Name</string>
+    <string name="Login_passWord">Password</string>
+    <string name="Login_button">Login</string>
+    <string name="Login_DomainText">Domain ID :</string>
+    <string name="Login_PasswordText">Password :</string>
+    <string name="Login_EnterBtn">Enter</string>
+</resources>
